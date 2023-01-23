@@ -1,0 +1,161 @@
+@import "./reset.css";
+
+body {
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+html, 
+body {
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 216px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;        
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.title {
+    padding: 20px;    
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 50px;
+    text-align: center;
+    color: bisque;
+}
+
+.input {
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: 300;
+    line-height: 1;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 6px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+}
+
+.btn {
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1;
+
+    width: 145px;
+    height: 54px;
+    border-radius: 6px;
+    background-color: crimson;
+
+    transition: background-color 0.5 ease;
+}
+
+.btn:hover {
+    background-color:blue;
+    
+}
+
+.card {
+    min-width: 360px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0px 5px 20px rgba(27, 108 ,114, 0.25)
+}
+
+.card_img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.card::before {
+    content: '';
+
+	position: absolute;
+	left: 10px;
+	bottom: -10px;
+	z-index: -1;
+
+	width: calc(100% - 20px);
+	height: 100%;
+
+	background: #ffffff;
+	box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+	border-radius: 6px;
+}
+
+.card_city {
+    line-height: 33px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #000;
+}
+
+.card_city span {
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: crimson;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    vertical-align: text-top;
+    color: white;
+
+}
+
+.card_weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_value {    
+    font-size: 92px;
+    line-height: 1;
+    color: #000;
+}
+
+.card_value sup {
+    font-size: 50%;
+}
+
+
+
+.card_description {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.footer {    
+    margin-top: auto;
+    width: 100%;
+    padding: 7px 15px 8px;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.footer a {
+    margin: auto;
+    color:#FDBB2D;
+    text-decoration: none;
+}
